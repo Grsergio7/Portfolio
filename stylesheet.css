@@ -1,0 +1,246 @@
+*{
+    font-family: 'work sans', sans-serif;
+    padding: 0px;
+    margin: 0;
+
+}
+
+body{
+    background-image: url(../images/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-attachment: fixed;
+    
+
+}
+
+
+/* Nav bar and links */
+
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding-top: 10px;
+    position: relative;
+}
+
+nav li a {
+    transition: all 0.3 ease 0s;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: rgb(0, 183, 255);
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: rgb(209, 209, 209);
+
+    position: absolute;
+    top: -10px;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* Name */
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 5em;
+    padding-left: 175px;
+    border: 2px solid;
+    height: auto;
+}
+
+h1, h2{
+    font-size: 120px;
+    border: 2px solid;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    
+}
+
+h2{
+    color: lightgray;
+    
+}
+
+p{
+    color: white;
+    font-size: 25px;
+    border: 2px solid;
+    
+}
+
+/* Ul */
+.icons{
+    display: flex;
+    padding-left: 0;
+    margin: ;
+    border: 2px solid purple;
+}
+ 
+/* Social Links */
+
+.fa2 {
+    padding-top: px;
+}
+
+.main ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    line-height: px;
+    font-size: px;
+    transition: .6s;
+}
+
+/* Slogan */
+
+.slogan {
+    display:;
+    border: 2px solid;
+}
+
+.slogan h5 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+    text-align: left;
+    border: 2px solid;
+}
+
+/* Projects */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 52em;
+    height: 248px;
+    border: 2px solid;
+}
+
+.cabinets {
+    display: flex;
+    flex-direction: row;
+    height: 252px;
+    margin-left: 280px;
+    margin-right: 280px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.project1 img {
+    flex: 4;
+    height: 230px;
+    width: 255px;
+    margin: 10px;
+}
+
+.information p {
+    font-size: 24px;
+}
+
+h4 {
+    color: #fff;
+    font-size: 42px;
+    
+}
+
+
+/* About Me */
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 53em;
+    
+    height: 248px;
+}
+
+h5 {
+    font-size: 28px;
+    color: white;
+    padding-left: 358px;
+    padding-right: 358px;
+    padding-top: 10px;
+}
+
+.info p{
+    padding-left: 358px;
+    padding-right: 358px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 252px;
+    margin-left: 280px;
+    margin-right: 280px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+}
+h6 {
+    text-align: center;
+    background-color: black;
+    color: rgb(143, 143, 143);
+    padding: 1em;
+    font-size: 14px;
+    opacity: .8;
+}
+
+#email {
+    font-size: 24px;
+}
+
+@media screen and (max-width:770px) {
+
+
+
+
+}
