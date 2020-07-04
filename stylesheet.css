@@ -80,31 +80,29 @@ nav a:hover::before {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding-top: 5em;
+    padding-top: 2em;
     padding-left: 175px;
-    border: 2px solid;
     height: auto;
 }
 
-h1, h2{
+.main h1, h2{
     font-size: 120px;
-    border: 2px solid;
+
 }
 
-h1{
+.main h1{
     color: rgb(255, 255, 255);
     
 }
 
-h2{
+.main h2{
     color: lightgray;
     
 }
 
-p{
+.main p{
     color: white;
     font-size: 25px;
-    border: 2px solid;
     
 }
 
@@ -113,7 +111,6 @@ p{
     display: flex;
     padding-left: 0;
     margin: ;
-    border: 2px solid purple;
 }
  
 /* Social Links */
@@ -133,96 +130,104 @@ p{
 
 /* Slogan */
 
-.slogan {
-    display:;
-    border: 2px solid;
+.main h5 {
+    display: flex;
+    flex-direction: row;
 }
 
-.slogan h5 {
+.main h5 {
     font-family: 'Dancing Script', cursive;
     font-size: 42px;
     text-align: left;
-    border: 2px solid;
+    color: #eee;
+    padding: .5em;
 }
 
 /* Projects */
 
-.projects {
+.title {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding-left: 52em;
-    height: 248px;
-    border: 2px solid;
+    flex-direction: row;
+    padding: 2em;
+    height: 50%;
 }
 
-.cabinets {
-    display: flex;
-    flex-direction: row;
-    height: 252px;
-    margin-left: 280px;
-    margin-right: 280px;
+.title h4 {
+    color: #fff;
+    font-size: 40px;   
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 10em;
+    margin-right: 10em;
+    height: auto;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.information h5 {
+    font-size: 26px;
+    color: #fff;
+    text-align: left;
+    padding: 1em;
 }
 
 .project1 img {
-    flex: 4;
-    height: 230px;
-    width: 255px;
-    margin: 10px;
+    height: 225px;
+    width: 250px;
+    padding: 1em;
 }
 
 .information p {
-    font-size: 24px;
-}
-
-h4 {
+    font-size: 18px;
+    padding: 1em;
     color: #fff;
-    font-size: 42px;
-    
 }
 
 
 /* About Me */
 
-.about {
+.wrapper2 {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 53em;
-    
-    height: 248px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
-h5 {
+.info h5 {
     font-size: 28px;
     color: white;
-    padding-left: 358px;
-    padding-right: 358px;
-    padding-top: 10px;
+    padding: 1em;
 }
 
-.info p{
-    padding-left: 358px;
-    padding-right: 358px;
+.info p {
+    color: #fff;
     text-align: justify;
     font-size: 20px;
+    padding: 1em;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    height: 252px;
-    margin-left: 280px;
-    margin-right: 280px;
-    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2em;
 }
 
+#email {
+    font-size: 24px;
+    color: #eee;
+}
 
 footer {
+    width: 100%;
     bottom: 0;
     position: absolute;
-    width: 100%;
     height: 2.5rem;
 }
 h6 {
@@ -234,13 +239,126 @@ h6 {
     opacity: .8;
 }
 
-#email {
-    font-size: 24px;
-}
+@media screen and (max-width:600px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    nav li{
+        display: inline-block;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding-top: 10px;
+        position: relative;
+    }
+    nav li a {
+        transition: all 0.3 ease 0s;
+        font-size: 14px;
+    }
 
-@media screen and (max-width:770px) {
+    /* Home Page */
 
+    .main {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding-top: 5em;
+            padding-left: 2em;
+            height: auto;
+    }
+    .main h1, h2{
+        font-size: 60px;
+    }
+    .main h5 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 24px;
+        text-align: left;
+        color: #eee;
+        padding: .5em;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        height: 2.5rem;
+    }
+    h6 {
+        font-size: 10px;
+    }
 
+    /* projects */
 
+    .title {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 2em;
+        height: 50%;
+    }
+    
+    .title h4 {
+        color: #fff;
+        font-size: 28px;   
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-left: 2em;
+        margin-right: 2em;
+        padding:1rem;
+    }
+    .project1 img {
+        height: 225px;
+        width: 250px;
+        padding-left: 2.5em;
+    }
+    .information h5 {
+        font-size: 21px;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .information p {
+        font-size: 14px;
+        padding: 0rem;
+        color: #fff;
+    }
 
+    /* About me */
+    .wrapper2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-left: 2em;
+        margin-right: 2em;
+        padding:1rem;
+    }
+    .info h5 {
+        font-size: 21px;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .info p {
+        color: #fff;
+        text-align: justify;
+        font-size: 14px;
+        padding: 0em;
+    }
+    
+    .info {
+        padding: 2em;
+    }
+    
+    #email {
+        font-size: 16px;
+        color: #eee;
+        padding: 1rem;
+    }
 }
